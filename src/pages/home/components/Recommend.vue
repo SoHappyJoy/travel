@@ -19,7 +19,7 @@
 
 <script>
 export default {
-    name:'',
+    name:'HomeRecommend',
     data (){
         return {
             recommendList:[{
@@ -44,21 +44,6 @@ export default {
                 desc:'快乐童年记忆，亲子乐园'
             },{
                 id:'0005',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
-                title:'上海迪士尼乐园',
-                desc:'快乐童年记忆，亲子乐园'
-            },{
-                id:'0006',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
-                title:'上海迪士尼乐园',
-                desc:'快乐童年记忆，亲子乐园'
-            },{
-                id:'0007',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
-                title:'上海迪士尼乐园',
-                desc:'快乐童年记忆，亲子乐园'
-            },{
-                id:'0008',
                 imgUrl:'http://img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
                 title:'上海迪士尼乐园',
                 desc:'快乐童年记忆，亲子乐园'
