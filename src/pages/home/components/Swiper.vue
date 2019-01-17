@@ -1,8 +1,8 @@
 <template>
     <div class="wrapper">
-        <swiper :options="swiperOption">
+        <swiper :options="swiperOption" v-if="showSwiper">
             <!-- slides -->
-            <swiper-slide v-for="item of swiperList" :key="item.id">
+            <swiper-slide v-for="item of list" :key="item.id">
                 <img class="swiper-img" :src="item.imgUrl" alt="上海">
             </swiper-slide>
             <div class="swiper-pagination"  slot="pagination"></div>
@@ -13,6 +13,9 @@
 <script>
 export default {
     name:'HomeSwiper',
+    props:{
+        list:Array
+    },
     data (){
         return {
             swiperOption:{
@@ -26,6 +29,11 @@ export default {
                 id:'0002',
                 imgUrl:'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20191/52f2b38f2edd916076bf12d8343e77f2.jpg_750x200_0ca49857.jpg'
             }]
+        }
+    },
+    computed:{
+        showSwiper (){
+            return this.list.length
         }
     }
 }
