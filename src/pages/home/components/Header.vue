@@ -4,7 +4,7 @@
         <div class="header-input"><span class="iconfont">&#xe632;</span>输入城市/景点/游玩主题</div>
         <router-link to='/city'>
             <div class="header-right">
-                {{this.doubleCity}}
+                {{this.city}}
                 <span class="iconfont arrow-icon">&#xe64a;</span>
             </div>
         </router-link>
@@ -12,12 +12,11 @@
 </template>
 
 <script>
-import {mapState,mapGetters} from 'vuex'
+import {mapState} from 'vuex'
 export default {
     name:'HomeHeader',
     computed: {
-        ...mapState(['city']),
-        ...mapGetters(['doubleCity'])
+        ...mapState(['city'])
     }
 }
 </script>
