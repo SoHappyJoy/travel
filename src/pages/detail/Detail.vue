@@ -13,6 +13,7 @@
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailList from './components/List'
+import axios from 'axios'
 export default {
     name:'Detail',
     components:{
@@ -46,6 +47,25 @@ export default {
                 title:'特惠票'
             }]
         }
+    },
+    methods:{
+        getDetailInfo(){
+            axios.get('./api/detail.json',{
+                params:{
+                    id:this.$route.params.id
+                }
+            }).then(this.handleGetDetailSucc)
+        },
+        handleGetDetailSucc(res){
+            res=res.data;
+            if(res.ret && res.data){
+                const data=res.data;
+                console.log(data);
+            }
+        }
+    },
+    mounted (){
+        this.getDetailInfo()
     }
 }
 </script>

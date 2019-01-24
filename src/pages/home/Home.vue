@@ -35,7 +35,6 @@ export default {
         }
     },
     computed:{
-        //mapstate
         ...mapState(['city'])
     },
     methods: {
