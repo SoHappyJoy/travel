@@ -33,9 +33,9 @@ export default {
                 let opacity=top/140;
                 opacity=opacity>1 ? 1 : opacity;
                 this.opacityStyle={opacity}
-                this.showAbs=false
+                this.showAbs=false;
             }else{
-                this.showAbs=true
+                this.showAbs=true;
             }
         }
     },
