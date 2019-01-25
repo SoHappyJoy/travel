@@ -32,15 +32,17 @@ export default {
             if(top>60){
                 let opacity=top/140;
                 opacity=opacity>1 ? 1 : opacity;
-                this.opacityStyle={opacity}
+                this.opacityStyle={opacity};
                 this.showAbs=false;
             }else{
                 this.showAbs=true;
             }
+            
         }
     },
     activated (){
-        window.addEventListener('scroll',this.handleScroll)
+        window.addEventListener('scroll',this.handleScroll);
+        
     },
     deactivated (){
         window.removeEventListener('scroll',this.handleScroll)

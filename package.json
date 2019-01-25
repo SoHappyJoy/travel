@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build",
+    "start": "npm run dev",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "better-scroll": "^1.13.4",
     "fastclick": "^1.0.6",
     "stylus": "^0.54.5",
