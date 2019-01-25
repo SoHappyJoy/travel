@@ -18,7 +18,7 @@ export default {
     props:{
         imgs:{
             type:Array,
-            default(){
+            default (){
                 return []
             }
         }
